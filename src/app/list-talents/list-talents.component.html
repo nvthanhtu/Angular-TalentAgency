@@ -1,0 +1,10 @@
+<div *ngIf="listTalents?.length" style="margin-top: 80px">
+    <mat-grid-list cols="3" rowHeight="350px">
+        <mat-grid-tile *ngFor="let talent of listTalents;index as i">
+          <app-talent-tag [talent]="talent" [index]="i"></app-talent-tag>
+        </mat-grid-tile>
+      </mat-grid-list>
+</div>
+<div *ngIf="!listTalents?.length">
+    Liste est vide.
+</div>

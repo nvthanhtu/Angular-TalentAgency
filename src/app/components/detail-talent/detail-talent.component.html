@@ -1,0 +1,29 @@
+<!-- <p>detail-talent works!</p> -->
+<!-- <p>{{talent|json}}</p> -->
+<form class="group-form" [formGroup]="loginForm">
+  <mat-form-field class="input-text">
+    <input matInput placeholder="First Name"  formControlName = 'firstName'>
+    <mat-error *ngIf="loginForm.get('firstName')?.valid != true">First name is required</mat-error>
+  </mat-form-field><br>
+  <mat-form-field class="input-text">
+    <input matInput placeholder="Last Name" formControlName ="lastName">
+    <mat-error *ngIf="loginForm.get('lastName')?.valid != true">Last name is required</mat-error>
+  </mat-form-field><br>
+  <mat-form-field class="input-text">
+    <input matInput placeholder="Email" formControlName ="email">
+    <mat-error *ngIf="loginForm.get('email')?.valid != true">Email is required with good format</mat-error>
+  </mat-form-field><br>
+  <mat-form-field class="input-text">
+    <input type="text" matInput formControlName="gender" [matAutocomplete]="auto">
+    <mat-error *ngIf="loginForm.get('email')?.valid != true">Gender is required</mat-error>
+  </mat-form-field><br>
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let gender of filteredOptions | async" [value] ="gender">
+      {{ gender }}
+    </mat-option>
+  </mat-autocomplete>
+  <mat-form-field class="input-text">
+    <input matInput placeholder="Nationality" formControlName ="nat">
+  </mat-form-field><br>
+  
+</form>

@@ -1,0 +1,18 @@
+<mat-card class="card" style="margin-top: 10px;">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"><img [src]="talent?.picture?.medium" height="40px" width="40px"></div>
+      <mat-card-title maxwidth="100px">{{talent?.name?.first + ' ' + talent?.name?.last}}</mat-card-title>
+      <mat-card-subtitle>id: {{talent?.id?.name}}+ {{talent?.id?.value}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="talent?.picture?.medium" height="140px" maxheight="140px" width="140px" maxwidth="140px">
+    <mat-card-content>
+        <p>Gender: {{talent?.gender}}</p>
+        <!-- <p>Nat: {{talent?.nat}}</p> -->
+        <p>Email: {{talent?.email}}</p>
+        <a [routerLink]="['/Talent/',index]" appRequiredLogin>More details</a>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>

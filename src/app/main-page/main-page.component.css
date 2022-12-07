@@ -1,0 +1,32 @@
+.grid-container {
+  margin: 0px;
+  border-color: black;
+  border-left: black;
+  background-color: rgb(224, 224, 224);
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-color: white;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.mainHeader{
+  background-color: #3f51b5;
+  color: white; 
+  margin: 0;
+  padding-left: 10px;
+}
