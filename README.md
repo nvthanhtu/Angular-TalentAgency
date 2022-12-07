@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
+This is a novice project for the course Angular Basic and Intermediate. 
+Here are some highlight of what I learnt in this project:
+- Component and service relationship
+- Lifecycle hooks
+- Routing and Guard
+- Resolver
+- Syntax of angular
+- Stream (using RsJx)
+- Testing (with Jasmine)
+- Angular CLI
+- Best practices from real-life example for organize an Angular project
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
